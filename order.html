@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Интернет-магазин Два Гуся</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <!--link rel="stylesheet" href="./css/bootstrap.css"-->
+        <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/media.css">
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/xml2json.js"></script>
+        <script type="text/javascript" src="./js/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="./js/my.js"></script>
+        <script type="text/javascript" src="./js/jquery.cookie.js"></script>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+    </head>
+    <body>
+        <header>
+            <div id="headerCircles">
+
+            </div>
+            <div id="headerContainer">
+                <aside id="headerLeft">
+                    <form id="searchForm" method="POST" action="#">
+                        <input type="search" name="query" placeholder="Поиск на сайте">
+                        <input type="submit" value="">
+                    </form>
+                    <div id="headerShopInfo">
+                        <div class="rotondaCaption" id="shopInfoDelivery"><a href="#">Доставка</a></div>
+                        <div class="rotondaCaption" id="shopInfoAbout"><a href="">О компании</a></div>
+                    </div>
+                    <div class="rotondaCaption" id="headerTagLine">
+                        <p>Товары наши хороши &ndash; <span id="headerTagLineSecond">развивайтесь малыши</span></p>
+                    </div>
+                </aside>
+                <div id="headerLogo" >
+                    <a href="index.html"><img class="center-block" src="./images/logo.png" alt=""></a>
+                </div>
+                <aside id="headerRight">
+                    <a href="tel:+380683829538"><p class="rotondaCaption" id="headerRightPhone"> <span>38 (068)</span> 382 95 38</p></a>
+                    <div id="headerWorkTime">
+                        <span>Пн-Пт: 9<sup>00</sup>-20<sup>00</sup> Сб-Вс: 10<sup>00</sup>-20<sup>00</sup></span>
+                    </div>
+                    <div id="headerCallBack">
+                        <div>Заказать обратный звонок</div>
+                        <img src="./images/telephone.png" alt="">
+                    </div>
+                </aside>
+
+            </div>
+        </header>
+        <main>
+            <div class="orderContainer">
+                <div class="orderInner">
+                    <p id="orderCaption">Оформление<br>заказа</p>
+                    <form id="userOrder">
+                            <p>
+                                <label>ФИО:</label>
+                                <input name="userName" placeholder="Иванов Пётр Васильевич" type="text" required>
+                            </p>
+                            <p>
+                                <label>Телефон:</label>
+                                <input name="userPhone" placeholder="+7(495)1234567" type="text" required>
+                            </p>
+                            <p>
+                                <label>E-mail:</label>
+                                <input name="userEmail" placeholder="yourmail@gmail.com" type="email"value="" required>
+                            </p>
+                    <div id="yourOrder">Ваш заказ:</div>
+                    </form>
+                    <!--div class="order">
+                        <a href="#"><img src="./images/cross.png" alt=""></a>
+                        <div class="orderProduct">
+                            <div class="orderProductName">Коляска Chicco Lite Way stroller Red Passion</div>
+                            <div><span class="amount">1 шт.</span></div>
+                            <div><span class="amount">14900 P.</span></div>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <a href="#"><img src="./images/cross.png" alt=""></a>
+                        <div class="orderProduct">
+                            <div class="orderProductName">Коляска Chicco Lite Way stroller Red Passion</div>
+                            <div><span class="amount">1 шт.</span></div>
+                            <div><span class="amount">14900 P.</span></div>
+                        </div>
+                    </div-->
+                    <div id="content">
+
+                    </div>
+                    <button class="orderButton"><div>оформить заказ</div></button>
+                    <div class="activate">
+                        <p><strong>Регистрация обязательна для следующих действий: </strong></p>
+                        <ul>
+                            <li>активация скидочного купона</li>
+                            <li>получение бонусных баллов за покупки</li>
+                            <li>оплата заказа через интернет</li>
+                            <li>оформление заказа за организацию</li>
+                        </ul>
+                        <div class="orderType">
+                            <input class="buyR" type="radio" name="buy" value="reg" checked="checked" />Покупка с регистрацией<br/>
+                            <input class="buyR" type="radio" name="buy" value="reg" checked="checked" />Вход для зарегистрированных пользователей<br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footerBg">
+                <div id="footerBgCircles">
+
+                </div>
+                <div id="footerBgContainer">
+                    <div id="footerBgLogo">
+                        <img  src="./images/footer_logo.png" alt="">
+                    </div>
+                    <div id="footerBgPhone">
+                        <a href="tel:+380683829538"><p>38 (068) 382 95 38</p></a>
+                    </div>
+                    <div id="socIconContainer">
+                        <a href="#"><span><img src="./images/social/twitter.png" alt=""></span></a>
+                        <a href="#"><span><img src="./images/social/vk.png" alt=""></span></a>
+                        <a href="#"><span><img src="./images/social/fb.png" alt=""></span></a>
+                        <a href="#"><span><img src="./images/social/pencil.png" alt=""></span></a>
+                        <a href="#"><span><img src="./images/social/wifi.png" alt=""></span></a>
+                        <a href="#"><span><img src="./images/social/mail.png" alt=""></span></a>
+                        <a href="#"><span><img src="./images/social/ok.png" alt=""></span></a>
+                    </div>
+                    <div id="footerBgGoosesContainer">
+                        <img src="./images/footer_gooses.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <script id="cartTmpl" type="text/x-jquery-tmpl">
+        {{each cart}}
+            <div class="order">
+                <a href="#"><img src="./images/cross.png" alt=""></a>
+                <div class="orderProduct">
+                    <div class="orderProductName"><a href="specs.html#cat_id=8&id=${id}">${title}</a></div>
+                    <div><span class="amount">${qty} шт.</span></div>
+                    <div><span class="amount">14900 P.</span></div>
+                </div>
+            </div>
+        {{/each}}
+        </script>
+        <script>
+            new MyShop('products.xml', 'cart')
+        </script>
+    </body>
+</html>

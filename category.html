@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Интернет-магазин Два Гуся</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <!--link rel="stylesheet" href="./css/bootstrap.css"-->
+        <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/media.css">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/jquery-min.js"></script>
+        <script src="./js/xml2json.js"></script>
+        <script src="./js/jquery.tmpl.min.js"></script>
+        <script src="./js/my.js"></script>
+        <script src="./js/main.js"></script>
+        <script type="text/javascript" src="./js/jquery.cookie.js"></script>
+    </head>
+    <body>
+    <header>
+        <div id="headerCircles">
+
+        </div>
+        <div id="headerContainer">
+            <aside id="headerLeft">
+                <form id="searchForm" method="POST" action="#">
+                    <input type="search" name="query" placeholder="Поиск на сайте">
+                    <input type="submit" value="">
+                </form>
+                <div id="headerShopInfo">
+                    <div class="rotondaCaption" id="shopInfoDelivery"><a href="#">Доставка</a></div>
+                    <div class="rotondaCaption" id="shopInfoAbout"><a href="">О компании</a></div>
+                </div>
+                <div class="rotondaCaption" id="headerTagLine">
+                    <p>Товары наши хороши &ndash; <span id="headerTagLineSecond">развивайтесь малыши</span></p>
+                </div>
+            </aside>
+            <div id="headerLogo" >
+                <a href="index.html"><img class="center-block" src="./images/logo.png" alt=""></a>
+            </div>
+            <aside id="headerRight">
+                <a href="tel:+380683829538"><p class="rotondaCaption" id="headerRightPhone"> <span>38 (068)</span> 382 95 38</p></a>
+                <div id="headerWorkTime">
+                    <span>Пн-Пт: 9<sup>00</sup>-20<sup>00</sup> Сб-Вс: 10<sup>00</sup>-20<sup>00</sup></span>
+                </div>
+                <div id="headerCallBack">
+                    <div>Заказать обратный звонок</div>
+                    <img src="./images/telephone.png" alt="">
+                </div>
+            </aside>
+
+        </div>
+    </header>
+    <main>
+        <div class="categoryContainer">
+            <div class="navBar">
+                <a href="/">Главная » </a>
+                <a href="/category/2">Мебель и матрасы » </a>
+            </div>
+            <h1 class="rotondaCaption">Детские кровати</h1>
+            <div class="categorySort">
+                <div class="sortCaption"><h4>Сортировать</h4></div>
+                <div class="sortEvents">
+                    <div class="sortType"><a href="#">по популярности</a></div>
+                    <div class="sortType"><a href="#">по цене</a></div>
+                    <div class="sortType"><a href="#">по цене и наличию</a></div>
+                    <div class="sortType"><a href="#">по брендам</a></div>
+                </div>
+            </div>
+            <div class="catalog" id="content">
+
+            </div>
+            <div class="col-lg-12 d-flex  align-items-center  end">
+                <form>
+                    <input type="button" class="b" name="back" value="Назад">
+                    <input type="button" class="s" name="1" value="1">
+                    <input type="button" class="s" name="2" value="2">
+                    <input type="button" class="s" name="3" value="3">
+                    <input type="button" class="s" name="4" value="4">
+                    <input type="button" class="s" name="..." value="..." readonly="">
+                    <input type="button" class="s" name="9" value="9">
+                    <input type="button" class="b" name="go" value="Вперед">
+                    <input type="button" class="b b10" name="10" value="по 10">
+                    <input type="button" class="b" name="20" value="по 20">
+                    <input type="button" class="b" name="all" value="все">
+                </form>
+            </div>
+        </div>
+        <aside class="rightColumn">
+            <div class="cartContainer">
+                <h4>В вашей корзине</h4>
+                <p class="productData" id="productsCount">7 товаров</p>
+                <p class="productData"id="productsSum">на сумму 14900 руб.</p>
+                <button class="checkout"><a href="order.html">оформить</a></button>
+            </div>
+            <div class="widget outer">
+                <div class="inner rightBlock">
+                    <div class="flexCenter">
+                        <div class="priceChoose">
+                            <h3 class="rotondaCaption">Цена, руб.</h3>
+                            <div>
+                                <span>от </span><input type="text"> <span> до </span> <input type="text">
+                            </div>
+                            <input type="range" min="0" max="100" step="1" value="50">
+                        </div>
+                        <div class="weightChoose">
+                            <h3 class="rotondaCaption">Вес, кг</h3>
+                            <div>
+                                <span>от </span><input type="text"> <span> до </span> <input type="text">
+                            </div>
+                            <input type="range" min="0" max="100" step="1" value="50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow">
+
+            </div>
+            <div class="widget outer">
+                <div class="inner rightBlock">
+                    <h3 class="rotondaCaption">Виды колясок</h3>
+                    <div><input type="checkbox" id="1"><label for="1"> Коляски для новорожденных</label></div>
+                    <div><input type="checkbox" id="2"><label for="2"> Прогулочные коляски</label></div>
+                    <div><input type="checkbox" id="3"><label for="3"> Коляски трости</label></div>
+                    <div><input type="checkbox" id="4"><label for="4"> Универсальные коляски</label></div>
+                    <div><input type="checkbox" id="5"><label for="5"> Коляски для двойни</label></div>
+                    <div><input type="checkbox" id="6"><label for="6"> Конверты</label></div>
+                    <div><input type="checkbox" id="7"><label for="7"> Защита от должя и солнца</label></div>
+                    <div><input type="checkbox" id="8"><label for="8"> Сумки к коляскам</label></div>
+                    <div><input type="checkbox" id="9"><label for="9"> Запчасти</label></div>
+                </div>
+            </div>
+            <div class="shadow">
+
+            </div>
+            <div class="widget outer">
+                <div class="inner rightBlock">
+                    <h3 class="rotondaCaption">Бренды</h3>
+                    <div><input type="checkbox" id="11"><label for="1"> ABC Design</label></div>
+                    <div><input type="checkbox" id="22"><label for="2"> Adamex</label></div>
+                    <div><input type="checkbox" id="33"><label for="3"> Androx</label></div>
+                    <div><input type="checkbox" id="44"><label for="4"> Aneco</label></div>
+                    <div> <input type="checkbox" id="55"><label for="5"> Anmar</label></div>
+                    <div><input type="checkbox" id="66"><label for="6"> Baby car (Бейби кар)</label></div>
+                    <div><input type="checkbox" id="77"><label for="7"> Bebetto</label></div>
+                    <div><input type="checkbox" id="88"><label for="8"> Britax</label></div>
+                    <div><input type="checkbox" id="99"><label for="9"> Capella</label></div>
+                    <div><input type="checkbox" id="1010"><label for="10"> Chicco</label></div>
+                    <div><input type="checkbox" id="1111"><label for="11"> Navington</label></div>
+                    <div> <input type="checkbox" id="1212"><label for="12"> Peg Perego (Пег Перего)</label></div>
+                </div>
+            </div>
+            <div class="shadow">
+
+            </div>
+            <div class="widget outer">
+                <div class="inner rightBlock">
+                    <h3 class="rotondaCaption">Характеристики</h3>
+                    <div class="filter">
+                        <ul>
+                            <li class="parent">
+                                <span>Механизм складывания</span>
+                                <ul class="child">
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Количество колес</span>
+                                <ul class="child">
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Колеса</span>
+                                <ul class="child">
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Максимальный возраст</span>
+                                <ul class="child">
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Цвет</span>
+                                <ul class="child">
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                    <li>qwerty</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow">
+
+            </div>
+            <div class="widget outer">
+                <div class="inner rightBlock">
+                    <h3 class="rotondaCaption">Каталог</h3>
+                    <div class="filter">
+                        <ul>
+                            <li class="parent">
+                                <span>Коляски</span>
+                                <ul class="child">
+                                    <li><a href="#">Коляски для новорожденных</a></li>
+                                    <li><a href="#">Прогулочные коляски</a></li>
+                                    <li><a href="#">Коляски трости</a></li>
+                                    <li><a href="#">Универсальные коляски</a></li>
+                                    <li><a href="#">Коляски для двойни</a></li>
+                                    <li><a href="#">Конверты</a></li>
+                                    <li><a href="#">Защита от дождя и солнца</a></li>
+                                    <li><a href="#">Сумки к коляскам</a></li>
+                                    <li><a href="#">Запчасти</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Мебель и матрасы</span>
+                                <ul class="child">
+                                    <li><a href="#">Детские кровати</a></li>
+                                    <li><a href="#">Матрасы</a></li>
+                                    <li><a href="#">Стульчики для кормления</a></li>
+                                    <li><a href="#">Манежи</a></li>
+                                    <li><a href="#">Пеленальные столы</a></li>
+                                    <li><a href="#">Шкафы</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Автокресла</span>
+                                <ul class="child">
+                                    <li><a href="#">Группа 0,0+ (0-13кг)</a></li>
+                                    <li><a href="#">Группа 0,1 (0-18кг)</a></li>
+                                    <li><a href="#">Группа 1 (9-18кг)</a></li>
+                                    <li><a href="#">Группа 1,2 (9-25кг)</a></li>
+                                    <li><a href="#">Группа 1,2,3 (9-36кг)</a></li>
+                                    <li><a href="#">Группа 2,3 (15-36кг)</a></li>
+                                    <li><a href="#">Группа 3 (22-36кг)</a></li>
+                                    <li><a href="#">Аксесуары для автокресел</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Развитие</span>
+                                <ul class="child">
+                                    <li><a href="#">Ходунки</a></li>
+                                    <li><a href="#">Интерактивные книжки</a></li>
+                                    <li><a href="#">Обучающие компьютеры</a></li>
+                                    <li><a href="#">Прыгунки</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Зимние товары</span>
+                                <ul class="child">
+                                    <li><a href="#">Саночки, Снегокаты, Тюбинги</a></li>
+                                    <li><a href="#">Ёлочные украшения</a></li>
+                                    <li><a href="#">Ёлки</a></li>
+                                    <li><a href="#">Лыжи</a></li>
+                                    <li><a href="#">Коньки</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Одежда и обувь для малышей</span>
+                                <ul class="child">
+                                    <li><a href="#">Шапочки</a></li>
+                                    <li><a href="#">Шарфики</a></li>
+                                    <li><a href="#">Комбинезончики</a></li>
+                                    <li><a href="#">Курточки</a></li>
+                                    <li><a href="#">Ботиночки</a></li>
+                                    <li><a href="#">Носочки</a></li>
+                                    <li><a href="#">Пеленочки</a></li>
+                                    <li><a href="#">Распашеночки</a></li>
+                                    <li><a href="#">Чепчики</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Одежда для беременных</span>
+                                <ul class="child">
+                                    <li><a href="#">ОДЕЖДА ДЛЯ БЕРЕМЕННЫХ</a></li>
+                                    <li><a href="#">БЕЛЬЕ ДЛЯ БЕРЕМЕННЫХ</a></li>
+                                    <li><a href="#">СОПУТСТВУЮЩИЕ ТОВАРЫ</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Товары по сниженным ценам</span>
+                                <ul class="child">
+                                    <li><a href="#">Уцененные товары</a></li>
+                                    <li><a href="#">Комиссионные товары</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Гигиена</span>
+                                <ul class="child">
+                                    <li><a href="#">Ванночки</a></li>
+                                    <li><a href="#">Горшочки</a></li>
+                                    <li><a href="#">Подгузники</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Игрушки</span>
+                                <ul class="child">
+                                    <li><a href="#">Игрушечки</a></li>
+                                    <li><a href="#">Мягкие игрушечки</a></li>
+                                    <li><a href="#">Игровые домики</a></li>
+                                    <li><a href="#">Конструкторы</a></li>
+                                    <li><a href="#">Электромобильчики</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Активные игры</span>
+                                <ul class="child">
+                                    <li><a href="#">Весолипедики</a></li>
+                                    <li><a href="#">Самокатики</a></li>
+                                    <li><a href="#">Качельки</a></li>
+                                    <li><a href="#">Горочки</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <span>Товары для мам и малышей, электроника</span>
+                                <ul class="child">
+                                    <li><a href="#">Блендеры</a></li>
+                                    <li><a href="#">Видеоняня</a></li>
+                                    <li><a href="#">Ночники</a></li>
+                                    <li><a href="#">Подогреватели для бутылочек</a></li>
+                                    <li><a href="#">Увлажнители, очистители воздуха</a></li>
+                                    <li><a href="#">Стерилизаторы</a></li>
+                                    <li><a href="#">Молокоотсосы</a></li>
+                                    <li><a href="#">Электронные весы</a></li>
+                                    <li><a href="#">Радионяни</a></li>
+                                    <li><a href="#">Рюкзаки-кенгуру</a></li>
+                                    <li><a href="#">Бутылочки</a></li>
+                                    <li><a href="#">Соски</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow">
+
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div id="footerBg">
+            <div id="footerBgCircles">
+
+            </div>
+            <div id="footerBgContainer">
+                <div id="footerBgLogo">
+                    <img  src="./images/footer_logo.png" alt="">
+                </div>
+                <div id="footerBgPhone">
+                    <a href="tel:+380683829538"><p>38 (068) 382 95 38</p></a>
+                </div>
+                <div id="socIconContainer">
+                    <a href="#"><span><img src="./images/social/twitter.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/vk.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/fb.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/pencil.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/wifi.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/mail.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/ok.png" alt=""></span></a>
+                </div>
+                <div id="footerBgGoosesContainer">
+                    <img src="./images/footer_gooses.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script id="prodTmpl" type="text/x-jquery-tmpl">
+                    {{each product}}
+                        <div class="categoryProductContainer">
+                            <a href="specs.html#cat_id=8&id=${id}">
+                                <h1>${title}</h1>
+                            </a>
+                            <div class="categoryProductInfo">
+                                {{if image}}
+                                    <a href="specs.html#cat_id=8&id=${id}">
+                                        <div class="categoryProductImage">
+                                            <img src="./images/products/${image}" alt="">
+                                        </div>
+                                    </a>
+                                {{/if}}
+                                <div class="catSpecs">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>Производитель</th>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;${producer}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div>
+                                        <button class="addToCartButton"><img src="/images/main/cart.png" alt=""><div><a href="#" data-id="${id}" data-name="${title}" data-link="order.html" class="buy">в корзину</a></div></button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="availableCheck">
+                                        <div>✓</div><span>В наличии</span>
+                                    </div>
+                                    <div class="priceBlock">
+                                        <s>${price} руб.</s>
+                                        <div class="productPrice"><span>5760 грн.</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </script>
+                <script>
+                    new MyShop('products.xml', 'category');
+                </script>
+    </body>
+</html>

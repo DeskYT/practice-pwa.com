@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'RotondaBold';
+    src: url("../fonts/RotondaBold.svg#RotondaBold") format("svg");
+    src: url("../fonts/RotondaBold.ttf") format("truetype");
+    src: url("../fonts/RotondaBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RotondaC';
+    src: url("../fonts/rotondac.otf");
+    font-weight: normal;
+    font-style: normal;
+}

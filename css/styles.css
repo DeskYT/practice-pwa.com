@@ -1,0 +1,1190 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fbf3eb;
+    width: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+p {
+    margin: 0 0 8px;
+}
+
+h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+header{
+    background-image: url("../images/top_bg.png");
+    width: 100%;
+    padding-top: 15px;
+    height: 204px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+footer{
+    margin-top: auto;
+}
+a{
+    text-decoration: none;
+    color: #2d5d7e;
+}
+
+a:visited{
+    color: #2d5d7e;
+}
+
+sup { vertical-align: baseline; position: relative; top: -0.4em; font-size: 75%; }
+sub { vertical-align: baseline; position: relative; bottom: -0.4em; }
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+b{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.rotondaCaption{
+    color: #2d5d7e;
+    font-family: RotondaBold;
+}
+
+#headerContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#headerLeft, #headerRight{
+    min-width: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}/*
+#headerLeft{
+    float: left;
+}
+
+#headerRight{
+    float: right;
+}*/
+
+#searchForm {
+    display: inline-block;
+    position: relative;
+}
+
+#searchForm input[type=search] {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0;
+    width: 260px;
+    float: left;
+    border: 2px solid #cccccc;
+    padding-left: 10px;
+    height: 40px;
+    overflow: hidden;
+    outline: none;
+    border-radius: 20px;
+    color: #8e8c8c;
+    font-style: italic;
+}
+
+#searchForm input[type=search]:focus {
+    border: 2px solid #00a9c4;
+}
+
+#searchForm input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    margin: 5px;
+    height: 30px;
+    cursor: pointer;
+    background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+    opacity: 0.5;
+    border: 2px solid #7a7a7a;
+    border-radius: 50%;
+}
+
+#searchForm input[type=submit]:hover {
+    opacity: 0.8;
+    border-color: #00a9c4;
+    border-radius: 50%;
+}
+
+#headerShopInfo{
+    width: 260px;
+}
+
+#shopInfoAbout, #shopInfoDelivery{
+    box-sizing: border-box;
+    margin-top: 10px;
+    float: right;
+    background-color: #eff5f8;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+    padding: 5px 5px 5px 35px;
+    font-family: "RotondaBold";
+    color: #2d5d7e;
+}
+
+#shopInfoAbout{
+    width: 130px;
+    background-image: url("../images/goose.png");
+}
+
+#shopInfoDelivery{
+    margin-left: 15px;
+    width: 110px;
+    background-image: url("../images/delivery.png");
+}
+
+#headerCircles{
+    display: block;
+    height: 60px;
+    background-image: url("../images/header_circles.png");
+    position: absolute;
+    z-index: 0;
+    top: 165px;
+    width: 100%;
+    background-repeat: repeat-x;
+}
+
+#headerRightPhone{
+    font-family: "RotondaBold";
+    font-weight: bolder;
+    font-size: 30px;
+    color: #2d5d7e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #edf2f6;
+
+    background-repeat: no-repeat;
+    background-image: url("../images/phone.png");
+    background-position: left;
+    padding: 10px 10px 10px 20px;
+}
+
+#headerRightPhone > span{
+    color: #4A8CBF;
+}
+
+#headerTagLine{
+    text-align: center;
+    margin-top: 10px;
+    font-family: "RotondaBold";
+    font-weight: bolder;
+    font-size: 24px;
+    color: #2d5d7e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #edf2f6;
+}
+
+#headerTagLineSecond{
+    font-size: 21px;
+}
+
+#headerWorkTime{
+    box-sizing: border-box;
+    height: 25px;
+    width: 240px;
+    padding-left: 30px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    font-family: "Trebuchet MS";
+    font-size: 12px;
+    color: #005177;
+    border-radius: 15px;
+    background-color: #eff5f8;
+    background-image: url("../images/header_time.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+}
+
+#headerCallBack{
+    box-sizing: border-box;
+    height: 25px;
+    width: 240px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: #eff5f8;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    color: #005177;
+}
+
+#headerCallBack > div{
+    float: left;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+#headerCallBack > img{
+    float: right;
+    margin-top: -3px;
+}
+
+
+#footerBg{
+    width: 100%;
+    height: 153px;
+}
+
+#footerBgContainer{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #afcede;
+    height: 153px;
+}
+
+#footerBgLogo{
+    display: block;
+}
+
+#footerBgPhone{
+    font-family: "RotondaBold";
+    font-weight: bolder;
+    font-size: 20px;
+    color: #2d5d7e;
+    background-repeat: no-repeat;
+    background-image: url("../images/footer_phone.png");
+    background-position: left;
+    background-position-y: 10px;
+    padding: 10px 10px 10px 15px;
+}
+
+#footerBgContainer > div + div{
+    margin-left: 6%;
+}
+
+#footerBgCircles{
+    height: 60px;
+    background-image: url("../images/header_circles.png");
+    position: absolute;
+    margin-top: -20px;
+    width: 100%;
+    background-repeat: repeat-x;
+}
+
+
+#footerBgGoosesContainer{
+    position: relative;
+    z-index: 1;
+    bottom: 2em;
+}
+
+#footerInfo{
+    margin-top: 40px;
+    height: 400px;
+    font-family: "Trebuchet MS";
+}
+#footerInfoColumns{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#footerInfoColumns > div + div{
+    margin-left: 5%;
+}
+#footerInfoLeft{
+    width: 50%;
+}
+
+#footerInfoTWorkTime{
+    font-weight: bold;
+}
+.footerWorkGraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 170px;
+    width: 231px;
+    padding: 25px;
+}
+#footerInfo h3{
+    font-family: RotondaBold;
+    color: #2d5d7e;
+}
+.widgets{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.fb-like{
+    padding-bottom: 3px;
+}
+.widgets > div + div{
+    margin-left: 1%;
+}
+
+#footerBestSellers{
+    height: 270px;
+    width: 100%;
+    background: url("../images/footer_strip.png") repeat-x, #ecded0 url("../images/footer_strip.png") repeat-x 0 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+main{
+    min-height: 300px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+}
+/*
+#products{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.productView{
+    background-image: url("../images/products/product_background.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 180px;
+    position: relative;
+}*/
+.productPrice{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 100px;
+    font-family: RotondaBold;
+    color: white;
+    outline-offset: 2px;
+    border-radius: 15px 0;
+    border: 2px dotted rgba(73, 166, 214,0.7);
+    background: rgb(107,192,238);
+    background: -moz-linear-gradient(0deg, rgba(107,192,238,1) 0%, rgba(184,225,247,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(107,192,238,1) 0%, rgba(184,225,247,1) 100%);
+    background: linear-gradient(0deg, rgba(107,192,238,1) 0%, rgba(184,225,247,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6bc0ee",endColorstr="#b8e1f7",GradientType=1);
+}
+.productNew{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+
+}
+.productName{
+    margin-left: 3px;
+    font-family: "Trebuchet MS";
+}
+.productImage{
+    margin-top: 10px;
+    margin-left: 18px;
+}
+.clearfix { clear: both; }
+.categoryList {
+    list-style: none;
+    height: 1580px;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    color: #212529;
+    text-align: left;
+}
+.categoryList > li{
+    /*flex: 0 0 25%;*/
+    max-width: 25%;
+}
+.categoryList li {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    font-size: 140%;
+}
+.categoryList a:hover {
+    text-decoration: underline;
+}
+.categoryItem{
+    margin-bottom: 10px;
+}
+
+.categoryName > h4{
+    margin-left: 10px;
+    color: #2d5d7e;
+    font-family: RotondaBold;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.categoryName > img{
+    height: 60px;
+}
+.categoryItem a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.categoryItem > p{
+    margin-top: 10px;
+}
+
+.categoryName{
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+.mainContainer{
+    max-width: 960px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*margin-right: auto;
+    margin-left: auto;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.rightColumn{
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.cartContainer{
+    font-family: "Trebuchet MS";
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-top: 30px;
+    background: url('../images/cloud.png') no-repeat center;
+    width: 262px;
+    height: 152px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cartContainer > h4{
+    margin-bottom: 10px;
+}
+.productData{
+    font-weight: bold;
+}
+
+.checkout{
+    font-family: RotondaBold;
+    font-size: 80%;
+    color: white;
+    background-color: #3da0d1;
+    height: 30px;
+    width: 90px;
+    border-radius: 15px;
+    border: 3px solid #c8e6f9
+}
+.checkout a{
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.rightColumn .widget{
+    margin-top: 50px;
+}
+.brandsList{
+    box-sizing: border-box;
+    padding: 30px 30px 50px;
+    background-color: white;
+    width: 231px;
+    list-style-position: inside;
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari and Chrome */
+    column-count: 2;
+    list-style-type: decimal;
+}
+
+.outer {
+    display: block;
+    /*margin: 0 auto 0;*/
+    margin: 0 60px 0;
+    max-width: 320px;
+    padding: 20px 0;
+    border-width: 1px 0;
+    position: relative;
+    background: #fff;
+}
+
+.inner {
+    margin: 0 -20px;
+    background-color: white;
+}
+
+.inner::before,
+.inner::after,
+.outer::before,
+.outer::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.inner::before {
+    bottom: -40px;
+    left: -60px;
+    clip: rect(auto, auto, 40px, 40px);
+}
+.inner::after {
+    bottom: -40px;
+    right: -60px;
+    clip: rect(auto, 40px, 40px, auto);
+}
+
+.outer::before {
+    top: -40px;
+    left: -60px;
+    clip: rect(40px, auto, auto, 40px);
+}
+
+.outer::after {
+    clip: rect(40px, 40px, auto, auto);
+    top: -40px;
+    right: -60px;
+}
+.shadow{
+    margin-top: 5px;
+    height: 14px;
+    width: 100%;
+    background-image: url("../images/box-shadow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 100%;
+    margin-bottom: 10px;
+}
+
+.delivery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    width: 231px;
+    padding: 0 15px;
+}
+.delivery *{
+    position: relative;
+    z-index: 1;
+}
+.delivery img{
+    height: 69px;
+    width: 92px;
+}
+.deliveryDescription{
+    margin-left: 10px;
+    font-family: RotondaC;
+    color: #2d5d7e;
+    float: right;
+    width: 95px;
+}
+.deliveryDescription span{
+    font-family: RotondaBold;
+}
+.newsWidget{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 231px;
+    padding: 10px 20px;
+}
+.newsWidget *{
+    position: relative;
+    z-index: 1;
+}
+.newsWidget h3{
+    font-size: 1.3rem;
+    font-family: RotondaBold;
+    color: #2d5d7e;
+}
+.newsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 15px;
+    width: 97%;
+}
+
+.newsDateBg {
+    padding: 5px;
+
+}
+
+.newsDate {
+    color: #FFFFFF;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    font-size: 15px;
+    background: #90c1e8;
+    padding: 10px;
+    margin-right: 110px;
+    position: relative;
+    width: 100px;
+}
+
+.newsDate::after {
+    content: '';
+    position: absolute;
+    left: 100%; top: 0;
+    width: 0;
+    border-top: 35px solid #90c1e8;
+    border-right: 25px solid transparent;
+}
+.ads{
+    margin-top: 10px;
+    height: 136px;
+    width: 704px;
+}
+
+.productInfo{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    /*background-color:white;*/
+}
+
+.categoryProductInfo{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    background-color:white;
+}
+
+.productContainer{
+    width: 100%;
+    /*height: 1000px;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.productContainer > h1{
+    color: #2d5d7e;
+    font-family: RotondaBold;
+    font-size: 40px;
+}
+
+.productImage{
+    width: 320px;
+    height: 293px;
+}
+
+.specs{
+    margin: 15px 15px 15px 50px;
+}
+
+.specs > div{
+    margin-top: 10px;
+}
+
+.specs > b{
+    font-family: RotondaBold;
+}
+
+.specs > img{
+    margin-top: 5px;
+}
+
+.productSpecsTable {
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 20px;
+    border-collapse: collapse;
+    line-height: 20px;
+    font-family: "Trebuchet MS";
+}
+
+.productSpecsTable tr{
+    border-bottom: 1px solid #d9d5d2;
+}
+
+.availableCheck{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 20px;
+    border-radius: 0;
+    color: #84c225;
+    font-family: 'Trebuchet MS';
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.availableCheck > div{
+    padding: 3px 2px 2px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #84c225;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.buyButton{
+    position: relative;
+    height: 55px;
+    width: 200px;
+    outline-offset: 2px;
+    border-radius: 25px 0;
+    border: 2px dashed rgba(242, 202, 61, 0.7);
+    background: #fdeb00; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fdeb00 0%, #f6c817 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fdeb00 0%,#f6c817 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fdeb00 0%,#f6c817 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdeb00', endColorstr='#f6c817',GradientType=0 ); /* IE6-9 */
+}
+
+.buyButton > img{
+    position: absolute;
+    left: 25px;
+    top: 25%;
+}
+
+.buyButton > div{
+    font-family: RotondaBold;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 20px;
+    color: #3b3a39;
+}
+
+.priceBlock b{
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+}
+
+.categoryContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.categorySort{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url("../images/sort_background.png");
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 681px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sortEvents{
+    margin-left: 40px;
+    display: flex;
+}
+.sortType{
+    padding: 15px 10px;
+}
+.sortType:hover{
+    background-color: #d6edf4;
+}
+.sortType + .sortType{
+
+}
+
+.categoryProductContainer{
+    padding: 20px;
+    width: 100%;
+    /*height: 1000px;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.categoryProductContainer h1{
+    color: #000000;
+    font-family: RotondaС;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.categoryProductImage{
+    width: 320px;
+    height: 293px;
+}
+
+.addToCartButton{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    outline-offset: 2px;
+    border-radius: 25px 0;
+    border: 2px dashed rgba(242, 202, 61, 0.7);
+    background: #fdeb00; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fdeb00 0%, #f6c817 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fdeb00 0%,#f6c817 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fdeb00 0%,#f6c817 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdeb00', endColorstr='#f6c817',GradientType=0 ); /* IE6-9 */
+}
+
+.addToCartButton > img{
+    position: absolute;
+    left: 25px;
+    top: 25%;
+}
+
+.addToCartButton > div{
+    font-family: RotondaBold;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 20px;
+    color: #3b3a39;
+}
+
+.catSpecs{
+    margin: 15px 15px 15px 50px;
+}
+
+.catSpecs > div{
+    margin-top: 10px;
+}
+
+.catSpecs > table {
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 20px;
+    border-collapse: collapse;
+    line-height: 30px;
+    font-family: "Trebuchet MS";
+}
+
+.catSpecs tr + tr {
+    border-top: 1px solid #d9d5d2;
+}
+
+.catSpecs > img{
+    margin-top: 5px;
+}
+
+.rightBlock{
+    padding: 20px 10%;
+    text-align: left;
+}
+.priceChoose, .weightChoose{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.priceChoose div, .weightChoose div{
+    margin-bottom: 10px;
+}
+
+.priceChoose input, .weightChoose input{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.priceChoose input[type=text], .weightChoose input[type=text]{
+    width: 60px;
+}
+.flexCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightBlock h3{
+    text-align: center;
+}
+.parent {
+    background: url("../images/plus.png") 0 3px no-repeat;
+    /* border: solid 1px; */
+    padding-left: 20px;
+    margin-bottom: 3px;
+    display: block;
+}
+.filter *{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.filter > ul > li > ul.child {
+    display: none;
+}
+
+.filter > ul > li.active >ul.active {
+    display: block;
+}
+
+.description{
+    font-family: "Trebuchet MS";
+    alignment: center;
+}
+
+.orderContainer{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../images/order.png");
+    background-repeat: no-repeat;
+    height: 947px;
+    width: 678px;
+    margin: 5% auto 10vh;
+    padding-top: 2%;
+}
+.orderInner{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#orderCaption{
+    position: relative;
+    font-weight: bold;
+    font-family: RotondaBold;
+    font-size: 30px;
+    color: #2d5d7e;
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#userOrder input {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    position: relative;
+    left: 4%;
+    width: 320px; /* Ширина поля */
+    padding: 10px; /* Поля */
+    box-shadow: inset 0 1px 5px rgba(0,0,0,0.2); /* Тень внутри */
+    border: 1px solid #ccc; /* Параметры рамки */
+    padding-left: 30px; /* Расстояние от левого края */
+    /*padding: 6px 0 4px 10px;*/
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+    margin-top:1%;
+}
+
+#userOrder label {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    position: relative;
+    width: 70px;
+    text-align: left;
+    float: left;
+    line-height: 10px;
+    margin-top:4%;
+}
+
+.order{
+    background-image: url("../images/order_product.png");
+    background-repeat: no-repeat;
+    background-position: center+5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    width: 440px;
+    height: 69px;
+    margin-top: 3%;
+}
+
+.orderProduct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+.orderProduct > div + div{
+    padding-left: 5%;
+}
+
+.orderProductName{
+    width: 200px;
+    text-align: left;
+    word-wrap: normal;
+}
+
+.order p{
+    font-family: "Trebuchet MS";
+}
+
+.order .amount{
+    font-family: "Trebuchet MS";
+    /*margin-left: -5%;
+    margin-top: 3%;*/
+}
+
+.order img{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: calc(50% - 9px);
+    right: 20px;
+}
+
+.orderButton{
+    position: relative;
+    height: 40px;
+    width: 210px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    outline-offset: 2px;
+    border-radius: 25px 0;
+    border: 2px dashed rgba(242, 202, 61, 0.7);
+    background: #fdeb00; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fdeb00 0%, #f6c817 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fdeb00 0%,#f6c817 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fdeb00 0%,#f6c817 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdeb00', endColorstr='#f6c817',GradientType=0 ); /* IE6-9 */
+}
+
+.orderButton > div{
+    font-family: RotondaBold;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3b3a39;
+}
+
+.activate {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+}
+
+.activate li{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.orderType{
+    margin-top: 15px;
+}
+
+.end {
+    background: url('../images/bg_for_start.png') no-repeat ;
+    width: 681px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.end input {
+    padding: 6px 13px;
+    background-color: #cae5ee;
+    border: none;
+    color: #1a1a18;
+    font-family: "Trebuchet";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.end input:hover {
+    font-size: 16px;
+}
+
+.s {
+    border-radius: 50%;
+}
+.b {
+    border-radius: 40%;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center;
+    justify-content: center;
+}

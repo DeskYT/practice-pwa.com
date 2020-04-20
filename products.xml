@@ -1,0 +1,72 @@
+<category id="8">
+    <product id="1">
+        <title>Кровать Милена С Подъемным Механизмом</title>
+        <price>6175</price>
+        <image>1.png</image>
+        <producer>Меблі ЛЕВ</producer>
+        <description>Деревянная кровать с вместительной нишей для белья</description>
+    </product>
+    <product id="2">
+        <title>Кровать Дуэт</title>
+        <price>5760</price>
+        <image>2.png</image>
+        <producer>Эстелла</producer>
+        <description>Двухярусная кровать из букового щита может дополнительно комплектоваться ящиками для белья</description>
+    </product>
+    <product id="3">
+        <title>Кровать Нота</title>
+        <price>3690</price>
+        <image>3.png</image>
+        <producer>Эстелла</producer>
+        <description>Односпальная кровать из букового щита или натурального дерева может быть в комплекте с нижними ящиками и без них</description>
+    </product>
+    <product id="4">
+        <title>Кровать Нота-Плюс</title>
+        <price>4190</price>
+        <image>4.png</image>
+        <producer>Эстелла</producer>
+        <description>Отличная деревянная кровать может изготавливаться в различных цветах и дополнительно комплектуется выдвижными ящиками</description>
+    </product>
+    <product id="5">
+        <title>Кровать JLOZ 90 (Каркас) Индиана</title>
+        <price>2254</price>
+        <image>5.png</image>
+        <producer>ГЕРБОР-холдинг</producer>
+        <description>Кровать JLOZ 90 (каркас) Индиана дополнит дизайн комнаты ребенка в колониальном стиле.</description>
+    </product>
+    <product id="6">
+        <title>Кровать Зефир</title>
+        <price>8290</price>
+        <image>6.png</image>
+        <producer>ТеМП-Мебель</producer>
+        <description>Деревянная двухъярусная кровать из массива ольхи. Разборная 0,8*1,9 без ящика</description>
+    </product>
+    <product id="7">
+        <title>Кровать Терри 1 Сп</title>
+        <price>1710</price>
+        <image>7.png</image>
+        <producer>Світ Меблів</producer>
+        <description>Уютная детская кровать Терри станет любимым место отдыха вашего малыша. Нарядное изголовье может быть выполнено в цветах &quot;розовый&quot; или &quot;фисташка&quot;. Ширина спального места 90Х200 см</description>
+    </product>
+    <product id="8">
+        <title>Кровать-Горка Дисней</title>
+        <price>6470</price>
+        <image>8.png</image>
+        <producer>Мебель Сервис</producer>
+        <description>Современная детская двухъярусная кровать из качественного ламинированного ДСП</description>
+    </product>
+    <product id="9">
+        <title>Кровать Жасмин Люкс Mebigrand</title>
+        <price>3870</price>
+        <image>9.png</image>
+        <producer>Mebigrand</producer>
+        <description>Односпальная кровать из дерева с защитным бортиком</description>
+    </product>
+    <product id="10">
+        <title>Кровать Валенсия</title>
+        <price>2700</price>
+        <image>10.png</image>
+        <producer>Мебель Сервис</producer>
+        <description>Недорогая односпальная кровать из модульной системы Валенсия</description>
+    </product>
+</category>

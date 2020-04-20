@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 1094px)
+{
+    #headerLogo{
+        display: none;
+    }
+    #headerContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+    }
+    #headerContainer aside + aside{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+
+}
+@media(max-width: 607px) {
+
+}
+@media(max-width: 336px) {
+
+}

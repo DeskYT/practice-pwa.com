@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Интернет-магазин Два Гуся</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <!--link rel="stylesheet" href="./css/bootstrap.css"-->
+        <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/media.css">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+    </head>
+    <body>
+    <header>
+        <div id="headerCircles">
+
+        </div>
+        <div id="headerContainer">
+            <aside id="headerLeft">
+                <form id="searchForm" method="POST" action="#">
+                    <input type="search" name="query" placeholder="Поиск на сайте">
+                    <input type="submit" value="">
+                </form>
+                <div id="headerShopInfo">
+                    <div class="rotondaCaption" id="shopInfoDelivery"><a href="#">Доставка</a></div>
+                    <div class="rotondaCaption" id="shopInfoAbout"><a href="">О компании</a></div>
+                </div>
+                <div class="rotondaCaption" id="headerTagLine">
+                    <p>Товары наши хороши &ndash; <span id="headerTagLineSecond">развивайтесь малыши</span></p>
+                </div>
+            </aside>
+            <div id="headerLogo" >
+                <a href="index.html"><img class="center-block" src="./images/logo.png" alt=""></a>
+            </div>
+            <aside id="headerRight">
+                <a href="tel:+380683829538"><p class="rotondaCaption" id="headerRightPhone"> <span>38 (068)</span> 382 95 38</p></a>
+                <div id="headerWorkTime">
+                    <span>Пн-Пт: 9<sup>00</sup>-20<sup>00</sup> Сб-Вс: 10<sup>00</sup>-20<sup>00</sup></span>
+                </div>
+                <div id="headerCallBack">
+                    <div>Заказать обратный звонок</div>
+                    <img src="./images/telephone.png" alt="">
+                </div>
+            </aside>
+
+        </div>
+    </header>
+    <main>
+        <div class="mainContainer">
+            <ul class="categoryList clearfix">
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/pram.png" alt="Коляски"><h4>Коляски</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">Коляски для новорожденных</a></li>
+                        <li><a href="#">Прогулочные коляски</a></li>
+                        <li><a href="#">Коляски трости</a></li>
+                        <li><a href="#">Универсальные коляски</a></li>
+                        <li><a href="#">Коляски для двойни</a></li>
+                        <li><a href="#">Конверты</a></li>
+                        <li><a href="#">Защита от дождя и солнца</a></li>
+                        <li><a href="#">Сумки к коляскам</a></li>
+                        <li><a href="#">Запчасти</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/furniture.png" alt="Мебель и матрасы"><h4>Мебель и матрасы</h4>
+                    </div>
+                    <ul>
+                        <li><a href="category.html#cat_id=8">Детские кровати</a></li>
+                        <li><a href="#">Матрасы</a></li>
+                        <li><a href="#">Стульчики для кормления</a></li>
+                        <li><a href="#">Манежи</a></li>
+                        <li><a href="#">Пеленальные столы</a></li>
+                        <li><a href="#">Шкафы</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/chairs.png" alt="Автокресла"> <h4>Автокресла</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">Группа 0,0+ (0-13кг)</a></li>
+                        <li><a href="#">Группа 0,1 (0-18кг)</a></li>
+                        <li><a href="#">Группа 1 (9-18кг)</a></li>
+                        <li><a href="#">Группа 1,2 (9-25кг)</a></li>
+                        <li><a href="#">Группа 1,2,3 (9-36кг)</a></li>
+                        <li><a href="#">Группа 2,3 (15-36кг)</a></li>
+                        <li><a href="#">Группа 3 (22-36кг)</a></li>
+                        <li><a href="#">Аксесуары для автокресел</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/growth.png" alt="Развитие"><h4>Развитие</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">Ходунки</a></li>
+                        <li><a href="#">Интерактивные книжки</a></li>
+                        <li><a href="#">Обучающие компьютеры</a></li>
+                        <li><a href="#">Прыгунки</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/winter_goods.png" alt="Зимние товары"><h4>Зимние товары</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">Саночки, Снегокаты, Тюбинги</a></li>
+                        <li><a href="#">Ёлочные украшения</a></li>
+                        <li><a href="#">Ёлки</a></li>
+                        <li><a href="#">Лыжи</a></li>
+                        <li><a href="#">Коньки</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/clothes_for_babies.png" alt="Одежда и обувь для малышей"><h4>Одежда и обувь для малышей</h4>
+                    </div>
+
+                    <ul>
+                        <li><a href="#">Шапочки</a></li>
+                        <li><a href="#">Шарфики</a></li>
+                        <li><a href="#">Комбинезончики</a></li>
+                        <li><a href="#">Курточки</a></li>
+                        <li><a href="#">Ботиночки</a></li>
+                        <li><a href="#">Носочки</a></li>
+                        <li><a href="#">Пеленочки</a></li>
+                        <li><a href="#">Распашеночки</a></li>
+                        <li><a href="#">Чепчики</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/clothes_for_pregnant.png" alt="Одежда для беременныех"><h4>Одежда для беременных</h4>
+                    </div>
+                    <p class="text-uppercase"><b>Одежда для беременных</b></p>
+                    <ul>
+                        <li><a href="#">Брюки, капри</a></li>
+                        <li><a href="#">Лосины, леггенсы</a></li>
+                        <li><a href="#">Комбинезоны</a></li>
+                        <li><a href="#">Джинсы</a></li>
+                        <li><a href="#">Блузы, туники</a></li>
+                        <li><a href="#">Водолазки</a></li>
+                        <li><a href="#">Джемперы, накидки</a></li>
+                        <li><a href="#">Платья, сарафаны</a></li>
+                        <li><a href="#">Костюмы</a></li>
+                        <li><a href="#">Юбки</a></li>
+                        <li><a href="#">Для отдыха и сна</a></li>
+                        <li><a href="#">Верхняя одежда</a></li>
+                    </ul>
+                    <p class="text-uppercase"><b>Белье для беременных</b></p>
+                    <ul>
+                        <li><a href="#">Белье дородовое</a></li>
+                        <li><a href="#">Бандажи дородовые</a></li>
+                        <li><a href="#">Трусы дородовые</a></li>
+                        <li><a href="#">Белье для кормления</a></li>
+                        <li><a href="#">Бандажи послеродовые</a></li>
+                        <li><a href="#">Колготки, лосины</a></li>
+                        <li><a href="#">Купальники</a></li>
+                    </ul>
+                    <p class="text-uppercase"><b>Сопутствующие товары</b></p>
+                    <ul>
+                        <li><a href="#">Подушки для кормления</a></li>
+                        <li><a href="#">Слинги с кольцами</a></li>
+                        <li><a href="#">Ремень безопасности для беременных</a></li>
+                        <li><a href="#">Ремень безопасности для детей</a></li>
+                        <li><a href="#">Браслет от токсикоза</a></li>
+                        <li><a href="#">Накладной животик</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/discounted_goods.png" alt="Товары по сниженным ценам"><h4>Товары по сниженным ценам</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">Уцененные товары</a></li>
+                        <li><a href="#">Комиссионные товары</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/hygiene.png" alt="Гигиена"><h4>Гигиена</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">Ванночки</a></li>
+                        <li><a href="#">Горшочки</a></li>
+                        <li><a href="#">Подгузники</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/toys.png" alt="Игрушки"><h4>Игрушки</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">Игрушечки</a></li>
+                        <li><a href="#">Мягкие игрушечки</a></li>
+                        <li><a href="#">Игровые домики</a></li>
+                        <li><a href="#">Конструкторы</a></li>
+                        <li><a href="#">Электромобильчеки</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/active_games.png" alt="Активные игры"><h4>Активные игры</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">Весолипедики</a></li>
+                        <li><a href="#">Самокатики</a></li>
+                        <li><a href="#">Качельки</a></li>
+                        <li><a href="#">Горочки</a></li>
+                    </ul>
+                </li>
+                <li class="categoryItem">
+                    <div class="categoryName">
+                        <img src="images/categories/goods_for_mothers.png" alt="Товары для мам и малышей, электроника"><h4>Товары для мам и малышей, электроника</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">Блендеры</a></li>
+                        <li><a href="#">Видеоняня</a></li>
+                        <li><a href="#">Ночники</a></li>
+                        <li><a href="#">Термометры</a></li>
+                        <li><a href="#">Подогреватели для бутылочек</a></li>
+                        <li><a href="#">Увлажнители, очистители воздуха</a></li>
+                        <li><a href="#">Стерилизаторы</a></li>
+                        <li><a href="#">Молокоотсосы</a></li>
+                        <li><a href="#">Электронные весы</a></li>
+                        <li><a href="#">Радионяни</a></li>
+                        <li><a href="#">Рюкзаки-кенгуру</a></li>
+                        <li><a href="#">Бутылочки</a></li>
+                        <li><a href="#">Соски</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="ads">
+                <img src="./images/ads.png" alt="">
+            </div>
+        </div>
+        <aside class="rightColumn">
+            <div class="cartContainer">
+                <h4>В вашей корзине</h4>
+                <p class="productData" id="productsCount">7 товаров</p>
+                <p class="productData"id="productsSum">на сумму 14900 руб.</p>
+                <button class="checkout"><a href="order.html">оформить</a></button>
+            </div>
+            <div class="widget outer">
+                <div class="brandsList inner">
+                    <ul>
+                        <li>Adamex</li>
+                        <li>Anmar</li>
+                        <li>Aro</li>
+                        <li>Bebetto</li>
+                        <li>Bogus</li>
+                        <li>Capella Ltd.</li>
+                        <li>Infinity</li>
+                        <li>Kajtex</li>
+                        <li>Riko</li>
+                        <li>Sherma Group</li>
+                        <li>Tako</li>
+                        <li>Teddy</li>
+                        <li>Roan</li>
+
+                        <li>Adamex</li>
+                        <li>Anmar</li>
+                        <li>Aro</li>
+                        <li>Bebetto</li>
+                        <li>Bogus</li>
+                        <li>Capella Ltd.</li>
+                        <li>Infinity</li>
+                        <li>Kajtex</li>
+
+                        <li>Adamex</li>
+                        <li>Anmar</li>
+                        <li>Aro</li>
+                        <li>Bebetto</li>
+                        <li>Bogus</li>
+                        <li>Capella Ltd.</li>
+                        <li>Infinity</li>
+
+                        <li>Tako</li>
+                        <li>Teddy</li>
+                        <li>Roan</li>
+                        <li>Adamex</li>
+                        <li>Anmar</li>
+                        <li>Aro</li>
+                        <li>Bebetto</li>
+                        <li>Bogus</li>
+                        <li>Capella Ltd.</li>
+                        <li>Infinity</li>
+                        <li>Kajtex</li>
+                        <li>Riko</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shadow">
+
+            </div>
+            <div class="widget outer">
+                <div class="inner delivery">
+                    <img src="./images/right_delivery.png" alt="">
+                    <div class="deliveryDescription">
+                        <span class="text-uppercase">Бесплатная доставка</span>
+                        <p>по всей России!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow">
+
+            </div>
+            <div class="widget outer">
+                <div class="inner newsWidget">
+                        <h3>Новости магазина</h3>
+                    <div class="newsContainer">
+                        <div class="newsDateBg">
+                            <div class="newsDate">12/09/2012</div>
+                        </div>
+                        <a href="#">Заголовок новости</a>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorem expedita necessitatibus rem...</span>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="newsContainer">
+                        <div class="newsDateBg">
+                            <div class="newsDate">12/09/2012</div>
+                        </div>
+                        <a href="#">Еще один заголовок новости</a>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, vero...</span>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <a href="Читать все новости"></a>
+                </div>
+            </div>
+            <div class="shadow">
+
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div id="footerBg">
+            <div id="footerBgCircles">
+
+            </div>
+            <div id="footerBgContainer">
+                <div id="footerBgLogo">
+                    <img  src="./images/footer_logo.png" alt="">
+                </div>
+                <div id="footerBgPhone">
+                    <a href="tel:+380683829538"><p>38 (068) 382 95 38</p></a>
+                </div>
+                <div id="socIconContainer">
+                    <a href="#"><span><img src="./images/social/twitter.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/vk.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/fb.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/pencil.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/wifi.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/mail.png" alt=""></span></a>
+                    <a href="#"><span><img src="./images/social/ok.png" alt=""></span></a>
+                </div>
+                <div id="footerBgGoosesContainer">
+                    <img src="./images/footer_gooses.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    </body>
+</html>
