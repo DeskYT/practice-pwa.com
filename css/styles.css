@@ -384,6 +384,8 @@ main{
     justify-content: center;
     align-content: center;
     margin-bottom: 40px;
+    max-width: 100%;
+    overflow: hidden;
 }
 /*
 #products{
@@ -439,6 +441,7 @@ main{
 .categoryList {
     list-style: none;
     height: 1580px;
+    margin-left: 10px;
     /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
@@ -463,6 +466,7 @@ main{
 }
 .categoryItem{
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .categoryName > h4{
@@ -495,9 +499,10 @@ a {
     text-decoration: none;
 }
 .mainContainer{
+    margin-left: 10px;
     max-width: 960px;
     width: 100%;
-    padding-right: 15px;
+    /*padding-right: 15px;/
     padding-left: 15px;
     /*margin-right: auto;
     margin-left: auto;*/
@@ -510,6 +515,7 @@ a {
     float: right;
     display: flex;
     flex-direction: column;
+
 }
 .cartContainer{
     font-family: "Trebuchet MS";
