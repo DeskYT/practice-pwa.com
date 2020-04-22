@@ -16,22 +16,33 @@
     }
 }
 
-@media screen and (max-width: 1012px) {
+@media screen and (max-width: 1030px) {
     .categoryList {
         height: 2500px;
     }
     .categoryList > li {
-        max-width: 45%;
+        max-width: 40%;
     }
 }
 
+@media screen and (max-width: 930px) {
+    .mainContainer {
+        width: 60vw;
+    }
+    .categoryList {
+       flex-wrap: nowrap;
+    }
+    .categoryList > li {
+        max-width: 90%;
+    }
+}
+/*
 @media screen and (max-width: 768px)
 {
 
-}
-@media(max-width: 607px) {
-
-}
+}*/
+/*
 @media(max-width: 336px) {
 
 }
+*/
