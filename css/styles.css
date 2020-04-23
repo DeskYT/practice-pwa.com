@@ -563,6 +563,14 @@ button:hover{
     padding: 30px 30px 50px;
     background-color: white;
     width: 231px;
+}
+.brandsList h3{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: RotondaBold;
+    color: #2d5d7e;
+}
+.brands{
     list-style-position: inside;
     -moz-column-count: 2; /* Firefox */
     -webkit-column-count: 2; /* Safari and Chrome */
