@@ -259,7 +259,7 @@
             </div>
             <div class="widget outer">
                 <div class="brandsList inner">
-                    <ul>
+                    <!--ul>
                         <li>Adamex</li>
                         <li>Anmar</li>
                         <li>Aro</li>
@@ -273,7 +273,6 @@
                         <li>Tako</li>
                         <li>Teddy</li>
                         <li>Roan</li>
-
                         <li>Adamex</li>
                         <li>Anmar</li>
                         <li>Aro</li>
@@ -282,7 +281,6 @@
                         <li>Capella Ltd.</li>
                         <li>Infinity</li>
                         <li>Kajtex</li>
-
                         <li>Adamex</li>
                         <li>Anmar</li>
                         <li>Aro</li>
@@ -290,7 +288,6 @@
                         <li>Bogus</li>
                         <li>Capella Ltd.</li>
                         <li>Infinity</li>
-
                         <li>Tako</li>
                         <li>Teddy</li>
                         <li>Roan</li>
@@ -303,7 +300,7 @@
                         <li>Infinity</li>
                         <li>Kajtex</li>
                         <li>Riko</li>
-                    </ul>
+                    </ul-->
                 </div>
             </div>
             <div class="shadow">
@@ -378,4 +375,20 @@
     </footer>
 
     </body>
+    <script>
+        fetch('https://restcountries.eu/rest/v2/regionalbloc/eu')
+            .then((response)=>{
+                return response.json();
+            })
+            .then((resp)=>{
+                var listofcapitals=document.createElement('ul');
+                listofcapitals.classList.add("capitalsList");
+                resp.forEach(function(item){
+                    var ListViewItem=document.createElement('li');
+                    ListViewItem.appendChild(document.createTextNode(item.capital));
+                    listofcapitals.appendChild(ListViewItem);
+                })
+                document.getElementsByClassName("brandsList")[0].appendChild(listofcapitals);
+            });
+    </script>
 </html>
